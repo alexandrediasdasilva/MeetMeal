@@ -1,0 +1,7 @@
+<h3>Procédure</h3>
+<ol class="procedure">
+	{% assign recette = site.data.recettes[page.recette] %}
+	{% for procedure in site.data.recettes.[page.recette].procedure %}
+	<li>{{recette.procedure[forloop.index0]}}</li>
+	{% endfor %}
+</ol>

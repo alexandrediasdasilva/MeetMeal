@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Enriqueta:700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="{{site.baseurl}}/css/reset.css">
+		<link rel="stylesheet" href="{{site.baseurl}}/css/fonts.css">
+		<link rel="stylesheet" href="{{site.baseurl}}/css/normalize.css">
+		<link rel="stylesheet" href="{{site.baseurl}}/css/style.css">
+		<title>{% if page.title %}{{page.title}} · {% endif %}MeetMeal - Rencontres culinaires à Paris{% if page.titleAfter %} · {{page.titleAfter}}{% endif %}</title>
+	</head>
+	<body>
+		<header class="{% if page.url == '/' %}homepage{% endif %}{% if page.url != '/' %}not-homepage{% endif %}">
+				{% include nav.html %}
+			{% if page.url != '/' %}</header>{% endif %}

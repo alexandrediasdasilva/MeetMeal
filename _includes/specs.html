@@ -1,0 +1,26 @@
+					<div class="specs">
+						<div class="rating">
+							<div class="stars">
+							{% assign recette = site.data.recettes[page.recette] %}
+								
+{% assign note = site.data.recettes.[page.recette].note %}
+
+	{% include programme_note.html %}
+
+								
+							</div> <!-- end stars -->
+							<p>{{recette.votants}} votes</p>
+						</div> <!-- end rating -->
+						<div>
+							<i class="fa fa-pie-chart" aria-hidden="true"></i>
+							<p>{{recette.parts}} personnes</p>
+						</div>
+						<div>
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+							<p>{{recette.tps_prep}}</p>
+						</div>
+						<div>
+							<i class="fa fa-bar-chart" aria-hidden="true"></i>
+							<p>{{recette.apport}} calories</p>
+						</div>
+					</div> <!-- end specs -->

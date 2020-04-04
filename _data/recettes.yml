@@ -1,0 +1,92 @@
+---
+paella:
+  nom: Paëlla végétarienne
+  note: '4.5'
+  votants: '53'
+  parts: '4'
+  tps_prep: 1 heure
+  apport: '613'
+  tags:
+  - végétarien
+  - espagne
+  - saveursdailleurs
+  ingredients:
+  - quantite: 350 g
+    nom: riz rond espagnol
+  - quantite: 2 cuillères à soupe
+    nom: huile d'olive
+  - quantite: '2'
+    nom: oignons émincés
+  - quantite: 150 g
+    nom: petits pois surgelés
+  - quantite: 1 poignée
+    nom: haricots verts (frais ou surgelés)
+  - quantite: 250 g
+    nom: champignons émincés
+  - quantite: '2'
+    nom: gousses d'ail
+  - quantite: '1'
+    nom: petit poivron rouge émincé
+  - quantite: '1'
+    nom: petit poivron vert émincé
+  - quantite: 1 boîte de 400 g
+    nom: tomates concassées
+  - quantite: 150 g
+    nom: noix de cajou non salées
+  - quantite: 2 doses
+    nom: safran en poudre
+  - nom: sel, poivre, poivre de cayenne
+  procedure:
+  - Faire revenir dans l’huile les oignons, les poivrons et l’ail.
+  - Ajouter les champignons, puis les tomates, les petits pois et les haricots.
+  - Après quelques minutes, ajouter le riz et mélanger.
+  - Ajouter 800 ml d’eau, dans laquelle vous aurez dissout le safran.
+  - Saler et poivrer, puis mélanger le tout et couvrir la poêle (couvercle ou papier alu).
+  - Laisser cuire à feu très doux, jusqu’à ce que le riz soit cuit et ait absorbé tout le liquide (on peut en rajouter en cours de cuisson).
+  - Pendant ce temps, faire dorer les noix de cajou dans un peu d’huile dans une seconde poêle (attention, ça brûle facilement), et les égoutter sur un papier absorbant.
+  - Quand le riz est cuit, ajouter les noix de cajou au plat et servir.
+  img_maxres: "img_paella_maxres.jpg"
+  img_miniature: "img_paella.jpg"
+
+salade:
+  nom: Salade de betterave aux pousses d’épinard
+  note: '3'
+  votants: '90'
+  parts: '4'
+  tps_prep: 25 minutes
+  apport: '292'
+  tags:
+  - végétarien
+  - été
+  - healthy
+  ingredients:
+  - quantite: '3'
+    nom: petites betteraves rouges
+  - quantite: 200 g
+    nom: pousses d’épinards
+  - quantite: '1'
+    nom: gousse d’ail
+  - quantite: '1'
+    nom: citron jaune
+  - quantite: 10 cl
+    nom: huile
+  - quantite: 1 cuillère à soupe
+    nom: moutarde de Dijon
+  - quantite: '3'
+    nom: œufs
+  - quantite: '8 brins'
+    nom: persil ciselé
+  - nom: sel, poivre
+  procedure:
+  - Faites durcir les œufs 10 minutes à l’eau bouillante salée puis rafraîchissez-les à l’eau froide.
+  - Enlevez les tiges des feuilles d’épinards. Rincez les feuilles sous un filet d’eau courante sans les faire tremper.
+  - Mettez une pincée de sel et une de poivre dans un bol puis ajoutez la moutarde et le jaune d’œuf.
+  - Émulsionnez la sauce en versant peu à peu l’huile comme pour une mayonnaise, puis réservez.
+  - Pelez les betteraves puis râpez-les à la main. Ajoutez l’ail pelé et haché, le jus de citron, du sel et du poivre.
+  - Concassez les œufs durs, dressez les épinards sur des assiettes et mettez la betterave crue au centre.
+  - Parsemez d’œuf dur et de persil haché. Servez avec la vinaigrette moutardée.
+  - Mélangez au dernier moment pour conserver la couleur de chaque ingrédient. Vous pouvez accompagner cette entrée de rollmops.
+  img_maxres: "img_salade_maxres.jpg"
+  img_miniature: "img_salade.jpg"
+
+

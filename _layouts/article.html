@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% include social-share.html %}
+<article>
+			<div class="article-header {{page.recette}}">
+				<div class="article-header-inner">
+					<h1>{{page.title}}</h1>
+					<h2>{{accroche}}</h2>
+					<time>Publié le {{page.date}}</time>
+					<div class="tags">
+					
+					{% assign recette = site.data.recettes[page.recette] %}
+					{% for tag in site.data.recettes[page.recette].tags %}
+			  		<a href="#">#{{recette.tags[forloop.index0]}}</a>
+			  		{% endfor %}
+
+					</div> <!-- end tags -->
+				</div> <!-- end article-header-inner -->
+			</div> <!-- end article-header -->
+
+			<div class="article-content flex">
+
+				<div class="left-column">
+					<div class="article-main">
+						{{content}}
+						{% include procedure.html %}
+						{% include article-options.html %}
+					</div> <!-- end article-main -->
+						{% include auteur.html %}
+				</div> <!-- end left-column -->
+
+				<div class="sidebar">
+					{% include specs.html %}
+					{% include ingredients.html %}
+					{% include related.html %}
+				</div> <!-- end sidebar -->
+			</div> <!-- end article-content -->
+		</article>

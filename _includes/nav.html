@@ -1,0 +1,38 @@
+		{% if page.url == '/' %}<nav>{% endif %}
+		{% if page.url != '/' %}<nav class="not-homepage">{% endif %}
+				<ul class="navmenu">
+					<li><a href="{{site.baseurl}}/"><img class="logo" src="{% if page.url == '/' %}img/logo_meetmeal{% endif %}{% if page.url != '/' %}{{site.baseurl}}/img/logo_meetmeal_gris{% endif %}.png" width="150" alt="Logo MeetMeal"></a></li>			
+ 					<li class="rubriques-wrapper">
+	 					<ul class="rubriques">
+		 					<li class="{% if page.url == '/' %}selection{% endif %}""><a href="{{site.baseurl}}/">Accueil</a></li>
+							<li class="{% if page.url contains 'association' %}selection not-homepage{% endif %}"><a href="#">L’association</a>
+							    <ul class="sous-menu">
+							      <li><a href="{{site.baseurl}}/pages/association/concept.html">Le concept</a></li>
+								  <li><a href="association/livredor.html">Livre d’or</a></li>
+							      <li><a href="#">Adhérez !</a></li>
+							    </ul>
+		    				</li>
+							<li class="{% if page.url contains 'recettes' %}selection not-homepage{% endif %}"><a href="recettes.html">Recettes</a>
+								<ul class="sous-menu">
+							      <li><a href="#">Faciles</a></li>
+							      <li><a href="#">Terroir</a></li>
+							      <li><a href="#">Végé</a></li>
+							    </ul>
+							</li>
+							<li class="{% if page.url contains 'événement' %}selection not-homepage{% endif %}"><a href="#">Événements</a>
+								<!-- <ul class="sous-menu">
+							      <li><a href="#"></a></li>
+							      <li><a href="#"></a></li>
+							      <li><a href="#"></a></li>
+							    </ul> -->
+							</li>
+						</ul>
+					</li>
+					<li class="autres-wrapper">
+						<ul class="autres">
+							<li><a href="#"><i class="fa fa-search"></i></a></li>
+							<li><a href="#" class="connexion-btn no-color {% if page.url != '/' %}not-homepage{% endif %}">Connexion</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>

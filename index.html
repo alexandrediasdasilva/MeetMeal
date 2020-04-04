@@ -1,0 +1,121 @@
+---
+layout: default
+---
+	
+			<div class="splash">
+				<div class="cd-intro">
+					<h1 class="cd-headline clip is-full-width">
+						<span class="cd-words-wrapper">
+							<b class="is-visible">Cuisinez</b>
+							<b>Partagez</b>
+							<b>Régalez</b>
+							<b>Épatez</b>
+							<b>Voyagez</b>
+							<b>Découvrez</b>
+							<b>Dégustez</b>
+							<b>Rencontrez</b>
+							<b>Émincez</b>
+							<b>Mijotez</b>
+							<b>Goûtez</b>
+						</span>
+					</h1>
+				</div> <!-- cd-intro -->
+				<div class="accroche">Nouez votre tablier. Et peut-être une amitié.
+				</div>
+				<a href="{{site.baseurl}}/concept.html"><div class="cta">Rejoignez-nous</div></a>
+			</div> <!-- end splash -->
+		</header>
+
+		<div class="container">
+			<div class="inner-container">
+				<h2>Ça vient de sortir</h2>
+				<div class="actus">
+
+				{% for news in site.categories.actus %}
+					<a href="{{site.baseurl}}/atelier_detox.html"><div class="card">
+			  			<div class="corner">À venir</div>
+			  			<img src="/img/img_detox.jpg">
+						<div class="caption">
+							<div class="titre">{{news.title}}</div>
+							<hr>
+							<div class="subtitle">Inscrivez-vous vite !</div>
+						</div>
+		  			</div></a>
+		  		{% endfor %}
+
+		  			
+		  		</div> <!-- end actus -->
+		  	</div> <!-- end inner-container -->
+			
+			<div class="newsletter">				
+			  	<div class="lundi">
+					<i class="fa fa-envelope-o"></i>
+					<div class="texte">Chaque lundi,<br>de nouvelles recettes dans votre boîte aux lettres
+				  	</div>
+			  	</div>
+			  	<div class="form">
+					<input class="mail" type="text" placeholder="votre adresse mail">
+				  	<input type="submit" value="OK" class="ok-btn">
+				</div>
+			</div> <!-- end newsletter -->
+
+			<div class="inner-container">
+				<h2>Nos dernières recettes</h2>
+				<div class="recettes">
+			  		
+			  		
+					{% for recette in site.categories.recettes %}
+			  		<a href="{{recette.url}}"><div class="small card">
+			  			<img src="/img/{{site.data.recettes[recette.recette].img_miniature}}">
+			  			<div class="caption">{{site.data.recettes[recette.recette].nom}}</div>
+			  		</div></a>
+			  		{% endfor %}
+
+			  	</div> <!-- end recettes -->
+			  	<a href="recettes.html"><div class="plus-btn">+ de recettes</div></a>
+			</div> <!-- end inner-container -->
+
+			<div class="concept-home">
+				<div class="inner-container">
+					<h2>Notre concept</h2>
+					<ul class="blocs-concept">
+						<li class="bloc">
+							<i class="fa fa-comments-o" aria-hidden="true"></i>
+							<h3>Dating gourmand</h3>
+							<p class="desc">
+							Quoi de mieux que de partager un repas pour faire connaissance ? Vous cuisinez le plat de votre choix pour un.e inconnu.e, qui en fait de même pour vous. Puis vous vous retrouvez pour la dégustation. Alors, qu’attendez-vous pour nous rejoindre ?</p>
+						</li>
+						<li class="bloc">
+							<i class="fa fa-leaf" aria-hidden="true"></i>
+							<h3>Fresh & natural</h3>
+							<p class="desc">On s’occupe des courses, vous vous occupez du reste ! Nous sélectionnons les meilleurs ingrédients auprès de nos petits producteurs locaux. De première fraîcheur, ils sont de saison et d’origine France. Ah oui, et nous favorisons aussi l’agriculture biologique et raisonnée.</p>
+						</li>
+						<li class="bloc">
+							<i class="fa fa-map" aria-hidden="true"></i>
+							<h3>Un cadre d’exception</h3>
+							<p class="desc">Pour vous permettre d’exprimer tout votre potentiel culinaire, nous passons en revue les restaurants et bars les plus insolites de la capitale. L’établissement sélectionné est entièrement privatisé pour l’événement et vous avez un accès total aux cuisines. Enfilez votre toque, vous êtes le chef le temps d’une soirée !</p>
+						</li>
+						<li class="bloc">
+							<i class="fa fa-life-ring" aria-hidden="true"></i>
+							<h3>Des conseils de pro</h3>
+							<p class="desc">En panne d’inspiration ? La peur au ventre quand il s’agit de passer aux fourneaux ? Pas de panique : notre fine équipe est sur place pour vous épauler au plus près. Comptez sur nous, on ne vous laissera pas tomber. On peut vous garantir que cette fois, vous ne raterez pas votre béchamel !</p>
+						</li>
+					</ul>
+					<a href="{{site.baseurl}}/pages/association/concept.html"><div class="plus-btn">En savoir +</div></a>
+				</div> <!-- end inner-container -->
+			</div> <!-- end concept -->
+		
+			<div class="slideshow">
+			</div> <!-- end slideshow -->
+
+			<div class="inner-container">
+		  		<div class="sponsors">
+			  		<h2>Ils nous soutiennent</h2>
+				  	<ul>
+				  		<li><a href="http://www.monbento.com/"><img src="/img/logo_monbento.svg" alt="monbento" width="120" height="120"></a></li>
+				  		<li><a href="https://www.josephjoseph.com/"><img src="/img/logo_josephjoseph.svg" alt="Joseph Joseph" width="120" height="120"></a></li>
+				  		<li><a href="https://www.skeppshult-boutique.fr/"><img src="/img/logo_skeppshult.svg" alt="Skeppshult" width="200" height="120"></a></li>
+				  		<li><a href="http://www.lebonbon.fr/"><img src="/img/logo_lebonbon.svg" alt="Le Bonbon" width="170" height="120"></a></li>
+				  	</ul>
+			  	</div> <!-- end sponsors -->
+			</div> <!-- end inner-container -->

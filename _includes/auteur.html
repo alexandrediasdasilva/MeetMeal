@@ -1,0 +1,9 @@
+						<div class="author">
+						{% assign auteur = site.data.auteurs[page.auteur] %}
+						<img src="/../{{ auteur.img }}"/>
+						<div class="text-author">
+							<a href="#">{{ auteur.nom_complet }}</a>
+							<h4>{{ auteur.statut }}</h4>
+							<div class="bio">{{ auteur.bio }}</div>
+						</div> <!-- end text-author -->
+					</div> <!-- end author -->

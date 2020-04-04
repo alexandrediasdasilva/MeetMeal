@@ -1,0 +1,11 @@
+					<div class="related">
+						<h3>Vous aimerez aussi</h3>	  		
+
+			  			{% for recette in site.categories.recettes %}
+						<a href="{{recette.url}}"><div class="related-item">
+							<div class="salade-img"></div>
+							<h2>{{recette.title}}</h2>
+						</div></a> <!-- end related-item -->
+						{% endfor %}
+
+					</div> <!-- end related -->

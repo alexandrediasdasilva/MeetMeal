@@ -1,0 +1,13 @@
+					<div class="ingredients">
+						<h3>Ingrédients</h3>
+						
+						<ul class="ingredient-list">
+						{% assign recette = site.data.recettes[page.recette] %}
+
+{% for ingredient in site.data.recettes.[page.recette].ingredients %}
+	<li>{{recette.ingredients[forloop.index0].quantite}} <span class="ingredient">{{recette.ingredients[forloop.index0].nom}}</span></li>
+	{% endfor %}
+
+						</ul>
+
+					</div> <!-- end ingredients -->
